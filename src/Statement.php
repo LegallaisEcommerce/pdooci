@@ -287,7 +287,7 @@ class Statement extends \PDOStatement implements \IteratorAggregate
             case \PDO::FETCH_NUM:
                 \oci_fetch_all($this->_stmt, $rst, 0, -1, \OCI_FETCHSTATEMENT_BY_ROW + \OCI_NUM);
                 break;
-                
+
             case \PDO::FETCH_BOTH:
                 \oci_fetch_all($this->_stmt, $rst, 0, -1, \OCI_FETCHSTATEMENT_BY_ROW + \OCI_NUM + \OCI_ASSOC);
                 break;
@@ -396,7 +396,7 @@ class Statement extends \PDOStatement implements \IteratorAggregate
                     var_dump(get_object_vars($cls));
                     continue;
                 }
-                $key = strtolower($key);
+                //$key = strtolower($key);
                 $cls->$key = $value;
             }
             return $cls;
@@ -428,7 +428,7 @@ class Statement extends \PDOStatement implements \IteratorAggregate
     {
         return $this->_statement;
     }
-    
+
     /**
      * Return the iterator
      *
