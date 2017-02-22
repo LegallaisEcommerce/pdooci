@@ -1,9 +1,9 @@
 {
-    "name": "taq/pdooci",
+    "name": "legallais/pdooci",
     "type": "library",
     "description": "Replacement for the PHP PDO OCI class",
     "keywords": ["oracle","oci","pdo","pdo_oci"],
-    "homepage": "http://github.com/taq/pdooci",
+    "homepage": "http://github.com/LegallaisEcommerce/pdooci",
     "license": "GPL",
     "version": "1.0.7",
     "authors": [
